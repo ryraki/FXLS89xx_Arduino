@@ -12,7 +12,9 @@ Please take a look at the example (example_EXT_TRIG).
 Call FXLS89xx_I2C_Initialize() function first before using any functions in this library. For using EXT_TRIG mode, call FXLS89xx_I2C_EXT_TRIG_Init() after the initialization function.  
 Any I2C read and write can be done by FXLS89xx_I2C_Read() and FXLS89xx_I2C_Write_Single(). If you would like to write multiple bytes to the device, then you can use FXLS89xx_I2C_Write(). The function needs a pointer to registerwritelist_t, which is the list of the same argument of FXLS89xx_I2C_Write_Single (writeTo: register address, value: register value, mask: put bits you would like to mask. 0 to ignore the mask). Make sure that registerwritelist_t structure should have \_\_END_WRITE_DATA\_\_ on the last item whose writeTo=0xFFFF indicates the list end.
 
-## Board Information
-FXLS8964AF: https://www.nxp.jp/design/software/development-software/sensor-toolbox-sensor-development-ecosystem/sensor-toolbox-development-board-for-fxls8964af-3-axis-accelerometer:FRDM-STBA-A8964  
-FXLS8967AF: https://www.nxp.jp/design/software/development-software/sensor-toolbox-sensor-development-ecosystem/sensor-toolbox-development-board-for-fxls8967af-3-axis-accelerometer:FRDM-STBA-A8967  
-FXLS8974CF: https://www.nxp.jp/design/software/development-software/sensor-toolbox-sensor-development-ecosystem/sensor-toolbox-development-board-for-fxls8974cf-3-axis-iot-accelerometer:FRDM-K22F-A8974
+## Datasheet and Board Information
+Device Information|Datasheet|Board Information
+---|---|---
+[FXLS8964AF](https://www.nxp.jp/products/sensors/accelerometers/2g-4g-8g-16g-low-power-12-bit-digital-accelerometer:FXLS8964AF)	|[FXLS8964AF.pdf](https://www.nxp.jp/docs/en/data-sheet/FXLS8964AF.pdf)	|[FRDM-STBA-A8964](https://www.nxp.jp/design/software/development-software/sensor-toolbox-sensor-development-ecosystem/sensor-toolbox-development-board-for-fxls8964af-3-axis-accelerometer:FRDM-STBA-A8964)
+[FXLS8967AF](https://www.nxp.jp/products/sensors/accelerometers/2g-4g-8g-16g-low-power-12-bit-digital-accelerometer:FXLS8967AF)	|[FXLS8967AF.pdf](https://www.nxp.jp/docs/en/data-sheet/FXLS8967AF.pdf) |[FRDM-STBA-A8967](https://www.nxp.jp/design/software/development-software/sensor-toolbox-sensor-development-ecosystem/sensor-toolbox-development-board-for-fxls8967af-3-axis-accelerometer:FRDM-STBA-A8967)
+[FXLS8974CF](https://www.nxp.jp/products/sensors/accelerometers/2g-4g-8g-16g-low-power-12-bit-digital-iot-accelerometer:FXLS8974CF)	|[FXLS8974CF.pdf](https://www.nxp.jp/docs/en/data-sheet/FXLS8974CF.pdf)	|[FRDM-K22F-A8974](https://www.nxp.jp/design/software/development-software/sensor-toolbox-sensor-development-ecosystem/sensor-toolbox-development-board-for-fxls8974cf-3-axis-iot-accelerometer:FRDM-K22F-A8974)
