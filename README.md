@@ -1,11 +1,11 @@
 # FXLS89xx_Arduino
 This library enables the developer to evaluate NXP FXLS89xx with Arduino.
 
-> **Warning**
-> Make sure that **J6-2 MUST NOT be connected** when you use this library.  
-> Since the IOREF pin on Arduino is supplied by 5V, **shorting IOREF (5V) and +3V3 (3.3V) can cause either FXLS89xx board or Arduino board damaged.**  
-> This driver offers all functions by only I2C communication because all Arduino output H signal is 5V.
-> <img src="J6-2.JPG" width="320px" alt="Cut J6-2 in order NOT to short 5V and 3.3V"/>
+## Warning
+Make sure that **J6-2 MUST NOT be connected** when you use this library.  
+Since the IOREF pin on Arduino is supplied by 5V, **shorting IOREF (5V) and +3V3 (3.3V) can cause either FXLS89xx board or Arduino board damaged.**  
+This driver offers all functions by only I2C communication because all Arduino output H signal is 5V.
+<img src="J6-2.JPG" width="320px" alt="Cut J6-2 in order NOT to short 5V and 3.3V"/>
 
 ## Datasheet and Board Information
 Device Information|Datasheet|Board Information
