@@ -1,7 +1,10 @@
 # FXLS89xx_Arduino
 This library enables the developer to evaluate NXP FXLS89xx with Arduino.
 
-## Warning
+> **Note**
+This library works with [`I2C_device`](https://github.com/teddokano/I2C_device_Arduino) library together. Please be sure the `I2C_device` library is imported in your environment before trying to build. 
+
+> **Warning**  
 Make sure that **J6-2 MUST NOT be connected** when you use this library.  
 Since the IOREF pin on Arduino is supplied by 5V, **shorting IOREF (5V) and +3V3 (3.3V) can cause either FXLS89xx board or Arduino board damaged.**  
 This driver offers all functions by only I2C communication because all Arduino output H signal is 5V.
